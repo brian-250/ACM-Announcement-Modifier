@@ -4,5 +4,6 @@
 #include <vector>
 
 int main() {
-
+    // Created inputFile object
+    std::fstream inputFile;
 }
