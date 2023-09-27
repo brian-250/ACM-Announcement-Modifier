@@ -92,4 +92,9 @@ int main() {
 
     // Writing the modified text from fullText to outputFile
     outputFile << fullText;
+
+    // Closing inputFile after reading it
+    inputFile.close();
+    // Closing outputFile after writing to it
+    outputFile.close();
 }
