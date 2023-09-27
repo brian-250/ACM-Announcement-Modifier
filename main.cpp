@@ -28,4 +28,6 @@ int main() {
 
     // Declaring a string variable to hold each line of text from inputFile
     std::string line;
+    // Declaring a string varibale to hold all lines of text from inputFile
+    std::string fullText;
 }
