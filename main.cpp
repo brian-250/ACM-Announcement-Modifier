@@ -8,49 +8,49 @@
 #include <regex>
 
 // Void function to replace strings from inputFile
-// The string 'str' argument contains all lines of text from the inputFile
-// Note: 'str' is passed by reference
-void ReplaceText(std::string& str) {
+// The string 'fullText' argument contains all lines of text from the inputFile
+// Note: 'fullText' is passed by reference
+void ReplaceText(std::string& fullText) {
 
-    // 'str' calls std::regex_replace which takes three arguments to replace strings
-    // The first argument is 'str' itself
-    // The second argument is the string that is found in 'str' that needs to be replaced
+    // 'fullText' calls std::regex_replace which takes three arguments to replace strings
+    // The first argument is 'fullText' itself
+    // The second argument is the string that is found in 'fullText' that needs to be replaced
     // The third argument is the new string that should replace the old string in argument two
 
     // Every 'str = ...' below does what is said in the previous comments above
-    str = std::regex_replace(str, std::regex(R"(\*\*Reminders:\*\*[\s\S]*)"), "");
+    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Reminders:\*\*[\s\S]*)"), "");
 
-    str = std::regex_replace(str, std::regex(R"(## Reminders:[\s\S]*)"), "");
+    fullText = std::regex_replace(fullText, std::regex(R"(## Reminders:[\s\S]*)"), "");
 
-    str = std::regex_replace(str, std::regex(R"(<@&710225330237079584>)"), "member");
+    fullText = std::regex_replace(fullText, std::regex(R"(<@&710225330237079584>)"), "member");
 
-    str = std::regex_replace(str, std::regex(R"(\*\*Date:\*\*)"), "Date:");
+    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Date:\*\*)"), "Date:");
 
-    str = std::regex_replace(str, std::regex(R"(\*\*Date: \*\*)"), "Date:");
+    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Date: \*\*)"), "Date:");
 
-    str = std::regex_replace(str, std::regex(R"(\*\*Time:\*\*)"), "Time:");
+    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Time:\*\*)"), "Time:");
 
-    str = std::regex_replace(str, std::regex(R"(\*\*Time: \*\*)"), "Time:");
+    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Time: \*\*)"), "Time:");
 
-    str = std::regex_replace(str, std::regex(R"(\*\*Location:\*\*)"), "Location:");
+    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Location:\*\*)"), "Location:");
 
-    str = std::regex_replace(str, std::regex(R"(\*\*Location: \*\*)"), "Location:");
+    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Location: \*\*)"), "Location:");
 
-    str = std::regex_replace(str, std::regex("#"), "");
+    fullText = std::regex_replace(fullText, std::regex("#"), "");
 
-    str = std::regex_replace(str, std::regex("<:ai:1100135230054072380>"), "🤖");
+    fullText = std::regex_replace(fullText, std::regex("<:ai:1100135230054072380>"), "🤖");
 
-    str = std::regex_replace(str, std::regex("<:algo:1100135231324958801>"), "🧑‍💻");
+    fullText = std::regex_replace(fullText, std::regex("<:algo:1100135231324958801>"), "🧑‍💻");
     
-    str = std::regex_replace(str, std::regex("<:dev:1100135234168696934>"), "💻");
+    fullText = std::regex_replace(fullText, std::regex("<:dev:1100135234168696934>"), "💻");
 
-    str = std::regex_replace(str, std::regex("<:gamedev:1100135239247990854>"), "🎮");
+    fullText = std::regex_replace(fullText, std::regex("<:gamedev:1100135239247990854>"), "🎮");
 
-    str = std::regex_replace(str, std::regex("<:design:1100135232507756666>"), "🎨");
+    fullText = std::regex_replace(fullText, std::regex("<:design:1100135232507756666>"), "🎨");
 
-    str = std::regex_replace(str, std::regex("<:acm:1100135227889815552>"), "😎");
+    fullText = std::regex_replace(fullText, std::regex("<:acm:1100135227889815552>"), "😎");
 
-    str = std::regex_replace(str, std::regex("<:oss:1100135621189713970>"), "😎");
+    fullText = std::regex_replace(fullText, std::regex("<:oss:1100135621189713970>"), "😎");
 }
 
 int main() {
@@ -89,4 +89,7 @@ int main() {
 
     // Calling ReplaceAll() function to replace strings from inputFile and save into fullText variable
     ReplaceText(fullText);
+
+    // Writing the modified text from fullText to outputFile
+    outputFile << fullText;
 }
