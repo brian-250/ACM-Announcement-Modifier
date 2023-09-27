@@ -25,4 +25,7 @@ int main() {
         // Returning 1 to signify unsuccessful run of the program
         return 1;
     }
+
+    // Declaring a string variable to hold each line of text from inputFile
+    std::string line;
 }
