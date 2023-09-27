@@ -86,4 +86,7 @@ int main() {
         fullText += line; // Concatenating lines to build the fullText variable
         fullText += "\n"; // Adding a newline between lines to fullText variable
     }
+
+    // Calling ReplaceAll() function to replace strings from inputFile and save into fullText variable
+    ReplaceText(fullText);
 }
