@@ -97,4 +97,10 @@ int main() {
     inputFile.close();
     // Closing outputFile after writing to it
     outputFile.close();
+
+    // Message printed when exceutable file is run
+    std::cout << "file1.txt modifications have now been made and written to file2.txt" << std::endl;
+
+    // Returning 0 signifies successful run of the program
+    return 0;
 }
