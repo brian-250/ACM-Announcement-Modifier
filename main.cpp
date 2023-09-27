@@ -30,4 +30,10 @@ int main() {
     std::string line;
     // Declaring a string varibale to hold all lines of text from inputFile
     std::string fullText;
+
+    // Reading each line of text from inputFile
+    while (std::getline(inputFile, line)) {
+        fullText += line; // Concatenating lines to build the fullText variable
+        fullText += "\n"; // Adding a newline between lines to fullText variable
+    }
 }
