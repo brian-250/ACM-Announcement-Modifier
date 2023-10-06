@@ -24,6 +24,8 @@ void ReplaceText(std::string& fullText) {
 
     fullText = std::regex_replace(fullText, std::regex(R"(<@&710225330237079584>)"), "member");
 
+    fullText = std::regex_replace(fullText, std::regex("# "), "");
+
     fullText = std::regex_replace(fullText, std::regex(R"(\*\*Date:\*\*)"), "Date:");
 
     fullText = std::regex_replace(fullText, std::regex(R"(\*\*Date: \*\*)"), "Date:");
@@ -35,8 +37,6 @@ void ReplaceText(std::string& fullText) {
     fullText = std::regex_replace(fullText, std::regex(R"(\*\*Location:\*\*)"), "Location:");
 
     fullText = std::regex_replace(fullText, std::regex(R"(\*\*Location: \*\*)"), "Location:");
-
-    fullText = std::regex_replace(fullText, std::regex("#"), "");
 
     fullText = std::regex_replace(fullText, std::regex("<:ai:1100135230054072380>"), "🤖");
 
