@@ -26,17 +26,17 @@ void ReplaceText(std::string& fullText) {
 
     fullText = std::regex_replace(fullText, std::regex("# "), "");
 
-    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Date:\*\*)"), "Date:");
+    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Date:\*\*)"), "Date: ");
 
-    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Date: \*\*)"), "Date:");
+    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Date: \*\*)"), "Date: ");
 
-    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Time:\*\*)"), "Time:");
+    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Time:\*\*)"), "Time: ");
 
-    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Time: \*\*)"), "Time:");
+    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Time: \*\*)"), "Time: ");
 
-    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Location:\*\*)"), "Location:");
+    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Location:\*\*)"), "Location: ");
 
-    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Location: \*\*)"), "Location:");
+    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Location: \*\*)"), "Location: ");
 
     fullText = std::regex_replace(fullText, std::regex("<:ai:1100135230054072380>"), "🤖");
 
@@ -50,7 +50,7 @@ void ReplaceText(std::string& fullText) {
 
     fullText = std::regex_replace(fullText, std::regex("<:acm:1100135227889815552>"), "😎");
 
-    fullText = std::regex_replace(fullText, std::regex("<:oss:1100135621189713970>"), "😎");
+    fullText = std::regex_replace(fullText, std::regex("<:oss:1100135621189713970>"), "🚀");
 }
 
 int main() {
