@@ -90,8 +90,8 @@ int main() {
     // Calling ReplaceAll() function to replace strings from inputFile and save into fullText variable
     ReplaceText(fullText);
 
-    // Writing the modified text from fullText to outputFile
-    outputFile << fullText;
+    // Writing the modified text from fullText to outputFile and concatenating ACM at CSUF's cross-platform promotion links
+    outputFile << fullText << "Join our Discord: acmcsuf.com/d\n" << "Follow our TikTok: acmcsuf.com/tiktok\n";
 
     // Closing inputFile after reading it
     inputFile.close();
