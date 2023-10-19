@@ -22,7 +22,7 @@ to this in file2.txt:
   <img src="images/image2.png" width="1500px" />
 </div>
 
-## Instructions on How to Compile
+## Instructions to Run Program
 
 Compile main.cpp using clang++ compiler:
 
