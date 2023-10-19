@@ -26,8 +26,6 @@ to this in file2.txt:
 
 Compile main.cpp using clang++ compiler:
 
-use
-
 <div align="center">
   <img src="images/image3.png" alt="image showing the usage of 'clang++ main.cpp' command" width="1500px" />
 </div>
