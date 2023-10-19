@@ -3,5 +3,6 @@
         "regex": "cpp",
         "sstream": "cpp",
         "iostream": "cpp"
-    }
+    },
+    "liveServer.settings.port": 5501
 }

@@ -1,0 +1,57 @@
+Hey <@&710225330237079584>! I hope all of you are studying harder than I am during these midterms (very likely). Regardless I wish you all the best of luck while taking them, oh and here are our upcoming workshops and events:
+
+# ‼️ Weekly Announcements ‼️
+
+# <:design:1100135232507756666> Design Team: Crafting User Interfaces <:design:1100135232507756666>
+Hello, Design Members this week our team is hosting a workshop where we'll be going over how to take our creative ideas and prototype them into Figma! Come join us as we bring our ideas to life!
+- **Date: **10/03/23
+- **Time: **Tuesday 7pm - 8pm
+- **Location: **(McCarthy Hall) MH-464
+
+# <:algo:1100135231324958801> Algo Team - Applied Data Structures: Trees <:algo:1100135231324958801>
+This week Algo Members we will be continuing our journey learning data structures by going over Trees. This includes graph theory, what a tree is, and going over binary trees, and binary search trees (BST). Join us as we delve in to the Tree data structures.
+- **Date:** 10/03/23
+- **Time: **Tuesday 6pm - 7pm
+- **Location: **(McCarthy Hall) MH-464
+
+# <:dev:1100135234168696934> Dev Team: Firebase Workshop <:dev:1100135234168696934>
+Join us for a hands-on workshop on building a real-time chat app with Firebase! You'll learn how to use Firebase, Websockets, and Firestore to create a fun and useful project that you can show off to your friends and family.
+- **Date: **10/04/23 
+- **Time: **Wednesday 2:30pm - 3:30pm 
+- **Location: **(Langsdorf Hall) LH-320
+
+# <:algo:1100135231324958801>  Algo Team - Applied Data Structures: Trees  <:algo:1100135231324958801>
+If you weren't able to join us on Tuesday, stop by this Wednesday.
+- **Date: **10/04/23
+- **Time: **Wednesday 4pm - 5pm
+- **Location: **(McCarthy Hall) MH-487
+
+# <:oss:1100135621189713970> Open Source Software Team: TypeScript Fundamentals Mini Workshop + Workday <:oss:1100135621189713970>
+Join us for a new mini workshop on TypeScript where we will go over the basic fundamentals necessary to help you read TS code and many other resources to practice. We will also get into groups and work on our projects.
+- **Date: **10/05/23
+- **Time: **Thursday 3:30pm - 4:30pm
+- **Location: **TBD
+
+# <:gamedev:1100135239247990854> Game Dev: No Workshop this Week  <:gamedev:1100135239247990854>
+# <:ai:1100135230054072380> AI Team: Image Generation Workshop <:ai:1100135230054072380>
+This week we'll explore how to use generative models such as DALL·E 3, Midjourney, and Stable Diffusion to create images. Additionally, we'll learn about the principles behind AI image generation.
+- **Date: **10/05/23
+- **Time: **Thursday 6pm - 7pm 
+- **Location:** (McCarthy Hall) MH-464
+
+# <:dev:1100135234168696934> Dev Team: Intro to Node.js <:dev:1100135234168696934>
+Want to learn how to build web applications with Node.js? Join us for this introductory workshop where you'll learn the basics of JavaScript and how to run it using Node.js to develop your own web applications!
+- **Date: **10/06/23
+- **Time: **Friday 4pm - 5pm
+- **Location: **CS 300
+
+# <:acm:1100135227889815552> General Board Meeting: Bowling Social! <:acm:1100135227889815552>
+We’re going to be bowling and playing pool in the TSU basement! Feel free to stop by for some food or to just socialize with our members.
+- **Date: **10/06/23
+- **Time: **Friday 5pm - 6pm
+- **Location: **TSU Bowling Area
+
+**Reminders:**
+If you would like to talk in the channels, please make sure you register at <#935659651998023771>. If you need any help please ask in <#935116605426389072> or DM <@&716835942941589524>/<@&716836011052892180> for help.
+
+If you would like to talk in the specified team channels please check the specific roles in <#1124096837016629388>
