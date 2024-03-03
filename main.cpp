@@ -18,25 +18,8 @@ void ReplaceText(std::string& fullText) {
     // The third argument is the new string that should replace the old string in argument two
 
     // Every 'str = ...' below does what is said in the previous comments above
-    fullText = std::regex_replace(fullText, std::regex(R"(\*\*Reminders:\*\*[\s\S]*)"), "");
 
-    fullText = std::regex_replace(fullText, std::regex(R"(## Reminders:[\s\S]*)"), "");
-
-    fullText = std::regex_replace(fullText, std::regex(R"(<@&710225330237079584>)"), "member");
-
-    fullText = std::regex_replace(fullText, std::regex("# "), "");
-
-    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Date:\*\*)"), "Date: ");
-
-    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Date: \*\*)"), "Date: ");
-
-    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Time:\*\*)"), "Time: ");
-
-    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Time: \*\*)"), "Time: ");
-
-    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Location:\*\*)"), "Location: ");
-
-    fullText = std::regex_replace(fullText, std::regex(R"(- \*\*Location: \*\*)"), "Location: ");
+    fullText = std::regex_replace(fullText, std::regex(R"(Reminders:[\s\S]*)"), "");
 
     fullText = std::regex_replace(fullText, std::regex("<:ai:1100135230054072380>"), "🤖");
 
@@ -51,6 +34,21 @@ void ReplaceText(std::string& fullText) {
     fullText = std::regex_replace(fullText, std::regex("<:acm:1100135227889815552>"), "😎");
 
     fullText = std::regex_replace(fullText, std::regex("<:oss:1100135621189713970>"), "🚀");
+
+    fullText = std::regex_replace(fullText, std::regex("## "), "");
+
+    fullText = std::regex_replace(fullText, std::regex("# "), "");
+
+    fullText = std::regex_replace(fullText, std::regex("\\*\\*"), "");
+
+    fullText = std::regex_replace(fullText, std::regex("\\* "), "");
+
+    fullText = std::regex_replace(fullText, std::regex("@"), "");
+
+    fullText = std::regex_replace(fullText, std::regex("‼️ Weekly Announcements ‼️"), "\n‼️ Weekly Announcements ‼️\n");
+
+    // Adds a new empty line after each line that contains the string 'Location:'
+    fullText = std::regex_replace(fullText, std::regex("(Location:.*)"), "$1\n");
 }
 
 int main() {
@@ -91,7 +89,9 @@ int main() {
     ReplaceText(fullText);
 
     // Writing the modified text from fullText to outputFile and concatenating ACM at CSUF's cross-platform promotion links
-    outputFile << fullText << "Join our Discord: acmcsuf.com/d\n" << "Follow our TikTok: acmcsuf.com/tiktok\n";
+    outputFile << fullText << "Join our Discord: acmcsuf.com/d\n" 
+                           << "Follow our TikTok: acmcsuf.com/tiktok\n"
+                           << "Check out our LinkTree: linktr.ee/acmcsuf";
 
     // Closing inputFile after reading it
     inputFile.close();
