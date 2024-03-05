@@ -47,6 +47,8 @@ void ReplaceText(std::string& fullText) {
 
     fullText = std::regex_replace(fullText, std::regex("‼️ Weekly Announcements ‼️"), "\n‼️ Weekly Announcements ‼️\n");
 
+    fullText = std::regex_replace(fullText, std::regex(R"(<:matt:1209266095236710421>[\s\S]*)"), "");
+
     // Adds a new empty line after each line that contains the string 'Location:'
     fullText = std::regex_replace(fullText, std::regex("(Location:.*)"), "$1\n");
 }
